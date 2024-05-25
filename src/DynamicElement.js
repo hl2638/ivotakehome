@@ -14,12 +14,8 @@ const Clause = ({ children, styles }) => {
   );
 };
 
-const DynamicElement = ({ element, clauseCount }) => {
+const DynamicElement = ({ element }) => {
   const { type, text, children, bold, underline, italic } = element;
-  if (type === "clause") {
-    console.log("element", element);
-    console.log("clauseCount", clauseCount);
-  }
 
   const baseStyles = {
     ...(bold && { fontWeight: "bold" }),
@@ -76,7 +72,7 @@ const DynamicElement = ({ element, clauseCount }) => {
     }
     case "clause":
       return (
-        <Clause style={baseStyles} count={clauseCount}>
+        <Clause style={baseStyles}>
           {text}
           {renderChildren()}
         </Clause>

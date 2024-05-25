@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  padding: 5%;
+  font-size: 14px;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.inline p,
+.inline h1,
+.inline h2,
+.inline h3,
+.inline h4 {
+  display: inline;
+}
+ul {
+  margin: 0;
+}
+
+div {
+  line-height: 1.75em;
+}
+
+.clause {
+  margin: 1em 0;
+}
+
+.clause .clause {
+  margin: 0.5em 0;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  padding: 3px 2px;
+}
